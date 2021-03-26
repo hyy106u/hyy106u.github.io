@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>資結咖啡館</title>
+	<link rel="stylesheet" href="starbuzz.css">
+	<link rel="stylesheet" href="styledform.css">
+  </head>
+  <body>
+
+    <h1>資結咖啡館</h1>
+    <h2>預購表單</h2>
+
+    <form method="post" enctype="text/plain" action="">
+	<div class="tableRow">
+		<p>
+          選擇豆子:
+		</p>
+		<p>
+            <select name="咖啡豆">
+              <option value="曼特寧 迦佑山">曼特寧 迦佑山</option>
+              <option value="巴西 伊帕內瑪">巴西 伊帕內瑪</option>
+              <option value="瓜地馬拉 薇薇特南果">瓜地馬拉 薇薇特南果</option>
+            </select>
+		</p>
+	</div>
+	<div class="tableRow">
+		<p> 數量: </p>
+		<p> <input type="number" name="袋" min="1" max="10"> </p>
+	</div>
+	<div class="tableRow label">
+		<p> 日期: </p>
+		<p> <input type="date" name="日期"> </p>
+	</div>
+	<div class="tableRow">
+		<p> 其他: </p>
+		<p>
+            <input type="checkbox" name="extras[]" value="giftwrap"> 禮物包裝<br>
+            <input type="checkbox" name="extras[]" value="catalog" checked>
+            包含型錄
+		</p>
+	</div>
+	<div class="tableRow">
+		<p class="heading"> 送至 </p>
+		<p></p>
+	</div>
+	<div class="tableRow">
+		<p> 姓名: </p>
+		<p> <input type="text" name="姓名" value="" placeholder="王小明" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 地址: </p>
+		<p> <input type="text" name="地址" value="" placeholder="大學路一段" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 城市: </p>
+		<p> <input type="text" name="城市" value="" placeholder="嘉義縣" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 電話: </p>
+		<p> <input type="tel" name="電話" value="" placeholder="0987654321" required> </p>
+	</div>
+	<div class="tableRow">
+		<p> 其他需求: </p>
+		<p>
+            <textarea name="comments"></textarea>
+		</p>
+	</div>
+	<div class="tableRow">
+		<p></p>
+		<p> <input type="submit" value="Order Now"> </p>
+	</div>
+    </form>
+  </body>
+</html>
+
